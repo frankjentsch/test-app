@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition for Event'
+define service ZUI_C_FJ_EA {
+  expose ZC_FJ_EA as Event;
+}

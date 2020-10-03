@@ -1,0 +1,17 @@
+managed; // implementation in class zbp_i_fj_ea unique;
+
+define behavior for ZI_FJ_EA //alias <alias_name>
+persistent table zfj_event
+
+lock master
+{
+  // mandatory fields that are required to create a travel
+  field ( mandatory ) event_id, event_name;
+
+  // semantic key is calculated in a determination
+  field ( readonly ) event_uuid;
+
+  create;
+  update;
+  delete;
+}
